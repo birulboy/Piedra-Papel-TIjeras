@@ -1,0 +1,224 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+#Final {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.game-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3vw;
+    margin: 0%;
+    text-align: center;
+}
+
+#win-message {
+    display: none;
+}
+
+.header-image {
+    min-width: 300px;
+    width: 20vw;
+    padding: 1%;
+}
+
+.choose-mode {
+    display: block;
+    justify-content: center;
+    padding: 10%;
+}
+
+#main-game {
+    display: none;
+    position: relative;
+
+}
+
+#select-turns {
+    position: relative;
+    left: 40vw;
+    display: none;
+}
+
+.button-choose {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+}
+
+.text-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-container {
+    display: flex;
+    width: 20vw;
+    height: 20vw;
+    margin-left: 10vw;
+    top: -20vw;
+}
+
+.animate {
+    animation: punch 1.5s infinite;
+}
+
+.animate-reverse {
+    animation: punchReverse 1.5s infinite;
+}
+
+@keyframes punch {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(50px) rotate(-20deg);
+    }
+}
+
+@keyframes punchReverse {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg) scaleX(-1);
+    }
+
+    50% {
+        transform: translateY(50px) rotate(-20deg) scaleX(-1);
+    }
+}
+
+.button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-responsiva {
+    max-width: 100%;
+    height: auto;
+}
+
+.button img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.buttons-container {
+    justify-content: space-between;
+    display: flex;
+}
+
+#first-player-buttons {
+    justify-content: space-between;
+    display: flex;
+    gap: 50px;
+    padding: 1%;
+}
+#second-player-buttons {
+    justify-content: space-between;
+    display: flex;
+    gap: 50px;
+    padding: 1%;
+}
+
+
+.second-container {
+    display: flex;
+    width: 20vw;
+    height: 20vw;
+    margin-left: 10vw;
+    top: -20vw;
+    transform: scaleX(-1);
+}
+
+@media screen and (max-width: 500px) {
+    .header-image {
+        min-width: 300px;
+        width: 40vw;
+        padding: 1%;
+    }
+
+    #first-player-buttons {
+        display: block;
+        gap: 50px;
+        padding: 5%;
+    }
+
+    #second-player-buttons{
+        display: block;
+        gap: 50px;
+        padding: 5%;
+                
+        }
+
+    .points{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+}
+
+
+    .points {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        gap: 8%;
+    }
+
+    #status-text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #win-message {
+        font-size: 30%;
+        display: flex;
+        align-items: center;
+    }
+
+    #reset {
+        border-radius: 50%;
+        font-family: 'Arial', sans-serif;
+        font-size: 60%;
+        font-weight: bold;
+        padding: 10px 20px;
+        cursor: pointer;
+        top: 10%;
+    }

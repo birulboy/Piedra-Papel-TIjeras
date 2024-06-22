@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.svgrepo.com/show/321251/punch.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="logic.js" defer></script>
+    <title>Jan-ken-pon</title>
+</head>
+
+<body>
+
+    <header class="game-header">
+        <button id="reset" href="#">Reiniciar Juego</button>
+        <img class="header-image"
+            src="https://images.squarespace-cdn.com/content/v1/5c5821a270468010638b474a/1549968567430-J4XLD73LMQXM38V3B0ZC/rock+paper+scissors+FINALS_Full+logo+-+landscape.png">
+    </header>
+
+    <div id="choose-mode">
+
+        <button class="button-choose" id="button1">
+            <p class="text-button">JUGADOR VS JUGADOR</p>
+        </button>
+        <button class="button-choose" id="button2">
+            <p class="text-button">JUGADOR VS MAQUINA</p>
+        </button>
+
+        <div id="select-turns">
+            <input type="number" placeholder="Numero de turnos" id="input-turns" required>
+            <button id="boton-enviar">OK</button>
+        </div>
+    </div>
+
+    <main id="main-game">
+
+
+
+        <div class="game-notifications">
+            <p id="notification-text"></p>
+        </div>
+
+
+        <div class="header-main">
+            <div class="points">
+                <div id="player1-victory">J1 Victorias: </div>
+                <div id="player1-draw">Empates: </div>
+                <div id="player1-lose">Derrotas: </div>
+                <div id="status-text"></div>
+                <div id="player2-victory">J2 Victorias: </div>
+                <div id="player2-draw">Empates: </div>
+                <div id="player2-lose">Derrotas: </div>
+            </div>
+
+        </div>
+
+        <div class="main-container">
+            <div class="first-container">
+                <img id="first-img" class="imagen-responsiva" src="assets/punch.png">
+            </div>
+            <div class="second-container">
+                <img id="second-img" src="assets/punch.png">
+            </div>
+        </div>
+
+        <section class="buttons-container">
+            <div id="first-player-buttons">
+                <button class="button" id="button-player1-rock"><img class="img-button" src="assets/punch.png"></button>
+                <button class="button" id="button-player1-scissors"><img class="img-button"
+                        src="assets/two.png"></button>
+                <button class="button" id="button-player1-paper"><img class="img-button" src="assets/five.png"></button>
+            </div>
+
+            <div id="second-player-buttons">
+                <button class="button" id="button-player2-rock"><img class="img-button" src="assets/punch.png"></button>
+                <button class="button" id="button-player2-scissors"><img class="img-button"
+                        src="assets/two.png"></button>
+                <button class="button" id="button-player2-paper"><img class="img-button" src="assets/five.png"></button>
+            </div>
+        </section>
+
+        <section></section>
+    </main>
+
+    <div id="Final"></div>
+
+</body>
+
+</html>
